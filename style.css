@@ -15,8 +15,8 @@ body, html {
 }
 
 :root {
-    --glow-color: #4e54a3;
-    --glow-thickness: 4vw;
+    --glow-color: #5661fa;
+    --glow-thickness: 8vw;
     --glow-rythem: 2s;
 }
 
@@ -30,7 +30,7 @@ body, html {
 }
 
 .logo img {
-    width: 30vw; 
+    width: 50vw; 
     height: auto; 
     animation: glow var(--glow-rythem) ease-in-out forwards, fadeIn 1.5s ease-in-out;
     max-width: 50vw;
@@ -38,7 +38,7 @@ body, html {
 
 
 .coming-soon {
-    font-size: 2em;
+    font-size: 5vw;
     margin-top: 20px;
     color: #333;
     animation: slideIn 1s ease-in-out;
