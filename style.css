@@ -15,30 +15,25 @@ body, html {
 }
 
 :root {
-    --glow-color: #4e54a371;
-    --glow-thickness: 50px;
-    --glow-rythem: 4s;
+    --glow-color: #4e54a3;
+    --glow-thickness: 4vw;
+    --glow-rythem: 2s;
 }
 
 @keyframes glow {
     0% {
-        filter: drop-shadow(0 0 var(--glow-thickness) var(--glow-color)) drop-shadow(0 0 calc(2 * var(--glow-thickness)) var(--glow-color)) drop-shadow(0 0 calc(3 * var(--glow-thickness)) var(--glow-color)) drop-shadow(0 0 calc(4 * var(--glow-thickness)) var(--glow-color));
-    }
-    50% {
-        filter: drop-shadow(0 0 calc(2 * var(--glow-thickness)) var(--glow-color)) drop-shadow(0 0 calc(3 * var(--glow-thickness)) var(--glow-color)) drop-shadow(0 0 calc(4 * var(--glow-thickness)) var(--glow-color)) drop-shadow(0 0 calc(5 * var(--glow-thickness)) var(--glow-color)) drop-shadow(0 0 calc(6 * var(--glow-thickness)) var(--glow-color));
+        filter: none;
     }
     100% {
         filter: drop-shadow(0 0 var(--glow-thickness) var(--glow-color)) drop-shadow(0 0 calc(2 * var(--glow-thickness)) var(--glow-color)) drop-shadow(0 0 calc(3 * var(--glow-thickness)) var(--glow-color)) drop-shadow(0 0 calc(4 * var(--glow-thickness)) var(--glow-color));
     }
 }
 
-.logo svg {
-    width: 50vw; 
+.logo img {
+    width: 30vw; 
     height: auto; 
-    animation: glow var(--glow-rythem) ease-in-out infinite, fadeIn 1.5s ease-in-out;
+    animation: glow var(--glow-rythem) ease-in-out forwards, fadeIn 1.5s ease-in-out;
     max-width: 50vw;
-    stroke: url(#gradient);
-    stroke-width: 8px;
 }
 
 
